@@ -1,0 +1,44 @@
+/* 不能及时刷新是因为浏览器缓存 */
+body {
+    background: url(../img/dayly/shopping.jpg) no-repeat;
+    background-position:0px 90px;
+}
+
+#d1 {
+    height:100px;
+    background-color:white;
+}
+#d1h1 {
+    position:relative;
+    left: 8%;
+    top:28%;
+}
+#d1h1a1 {
+    color:orange;
+    text-decoration:none;
+}
+#d1p1 {
+    color:orange;
+    position:relative;
+    left:11%;
+    top:5%;
+}
+#d1-1 {
+    background-color:#C1FFC1;
+    width:500px;
+    height:28px;
+    position:relative;
+    left:30%;
+    top:-60%;
+}
+
+#d2 {
+    width:350px;
+    background-color:#00FFFF;
+    position:relative;
+    left:65%;
+    top:140px;
+}
+
+
+
