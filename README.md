@@ -1,5 +1,5 @@
 <<<<<<< HEAD
 # django_project
-=======111
+=======222
 #django_mall
 >>>>>>> readme
