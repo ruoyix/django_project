@@ -1,6 +1,7 @@
 from django.urls import path
 from ruoyi_mall import views as v
 from django.contrib.auth.views import *
+from django.conf import global_settings
 
 app_name = 'ruoyi_mall'   # mall:login
 urlpatterns = [
