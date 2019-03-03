@@ -1,0 +1,9 @@
+FROM python:3.6
+
+RUN mkdir /ruoyi_mysql
+
+WORKDIR /ruoyi_mysql
+
+RUN apt-get update && apt-get install -y python3-dev
+ 
+RUN apt-get install -y  default-libmysqlclient-dev

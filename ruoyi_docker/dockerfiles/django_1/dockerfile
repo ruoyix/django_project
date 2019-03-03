@@ -1,0 +1,8 @@
+FROM mysql:3.0
+
+COPY ./requirement.txt /requirement.txt
+
+RUN pip3 install -r /requirement.txt \
+    -i http://mirrors.aliyun.com/pypi/simple/ \
+    --trusted-host mirrors.aliyun.com
+

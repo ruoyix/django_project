@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>index</title>
+    {%load static%}
+</head>
+<body data-spy="scroll" data-target="#scroll-nav" data-offset="1">
+    <link rel="stylesheet" href="{%static 'ruoyi_mall/css/index.css'%}">
+    <script src="{%static 'ruoyi_mall/js/index.js'%}"></script>
+    <ul id="u1" class="nav nav-tabs justify-content-end">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown">{{user}}</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="{% url 'ruoyi_mall:shopcar' %}">购物车</a>
+                <a class="dropdown-item" href="{% url 'ruoyi_mall:password_change' %}">更改密码</a>
+                <a class="dropdown-item" href="{% url 'ruoyi_mall:logout' %}">退出登录</a>
+            </div>
+        </li>
+    </ul>
+    <div id="d1" class="container-fluid">
+        <h1 id="d1h1" class="display-5"><a id="d1h1a" href="{% url 'ruoyi_mall:index' %}">若逸商城</a></h1>
+        <p id="d1p1">ruoyi.com</p>
+        <div id="d1-1">
+            <form class="form-inline">
+                <input id="d1-1i1" type="text" class="form-control" placeholder="搜索商品">
+                <button id="d1-1b1" type="button" class="btn">搜索</button>
+            </form>
+        </div>
+    </div>
+    <div id="d2" class="d-flex flex-row text-white">
+        <div id="d2-1" class="p-2 text-center">商品分类</div>
+    </div>
+
+    <div id="d3">
+        <!-- 快捷菜单 -->
+        <div id="d3-1">
+            <div id="d3-1-1" class="card">
+                <div id="d3-1-1-1" class="card-header  text-center">
+                    <a class="card-link" data-toggle="collapse" href="#d3-1-1-2">水果</a>
+                </div>
+                <div id="d3-1-1-2" class="collapse" data-parent="#d3-1">
+                    <div id="d3-1-1-2-1" class="card-body">
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">苹果</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">香蕉</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">榴莲</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">榴莲</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="d3-1-2" class="card">
+                <div id="d3-1-2-1" class="card-header  text-center">
+                    <a class="card-link" data-toggle="collapse" href="#d3-1-2-2">饮料</a>
+                </div>
+                <div id="d3-1-2-2" class="collapse" data-parent="#d3-1">
+                    <div id="d3-1-2-2-1" class="card-body">
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">绿茶</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">雪碧</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">红牛</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">红牛</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="d3-1-3" class="card">
+                <div id="d3-1-3-1" class="card-header  text-center">
+                    <a class="card-link" data-toggle="collapse" href="#d3-1-3-2">零食</a>
+                </div>
+                <div id="d3-1-3-2" class="collapse" data-parent="#d3-1">
+                    <div id="d3-1-3-2-1" class="card-body">
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">饼干</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+
+                            <li><a href="#">辣条</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">面包</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">面包</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="d3-1-4" class="card">
+                <div id="d3-1-4-1" class="card-header  text-center">
+                    <a class="card-link" data-toggle="collapse" href="#d3-1-4-2">日用品</a>
+                </div>
+                <div id="d3-1-4-2" class="collapse" data-parent="#d3-1">
+                    <div id="d3-1-2-4-1" class="card-body">
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">毛巾</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">牙膏</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">牙刷</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">牙刷</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="d3-1-5" class="card">
+                <div id="d3-1-5-1" class="card-header  text-center">
+                    <a class="card-link" data-toggle="collapse" href="#d3-1-5-2">电子用品</a>
+                </div>
+                <div id="d3-1-5-2" class="collapse show" data-parent="#d3-1">
+                    <div id="d3-1-5-2-1" class="card-body">
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">手机</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">笔记本</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">电视机</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">摄像机</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">闹钟</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">手表</a></li>
+                        </ul>
+                        <ul class=" nav nav-tabs justify-content-center">
+                            <li><a href="#">电动车</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播 -->
+        <div id="carousel" class="carousel" data-ride="carousel">
+            <ul class="carousel-indicators">
+               <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="incarousel" src="/static/ruoyi_mall/img/fruit/watermelon.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="incarousel" src="/static/ruoyi_mall/img/fruit/watermelon.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="incarousel" src="/static/ruoyi_mall/img/fruit/watermelon.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="incarousel" src="/static/ruoyi_mall/img/fruit/watermelon.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img class="incarousel" src="/static/ruoyi_mall/img/fruit/watermelon.jpg">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!--滚动监听分类展示-->
+    <form class="shower-card-form" style="display:none" action="{%url 'ruoyi_mall:detail'%}" method="post">
+        {% csrf_token %}
+        <input class="form-input1" type="text" name="img" value="default">
+        <input class="form-input2" type="text" name="goods_info" value="default">
+        <input class="form-input3" type="text" name="price" value="default">
+    </form>
+    <!--导航栏-->
+    <nav id="scroll-nav">
+        <ul id="scroll-nav-u1" class="nav nav-tabs flex-column fixed-bottom">
+            <li class="nav-item">
+                <a style="color:green" class="nav-link" href="#">导航</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#d4">水果</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#d5">饮料</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#d6">零食</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#d7">日用</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#d8">电子</a>
+            </li>
+            <li class="nav-item">
+                <a style="color:red" class="nav-link" href="#u1">顶部</a>
+            </li>
+        </ul>
+    </nav>
+    <!--分类show-->
+    <!--水果-->
+    <div id="d4" class="shower">
+        <nav class="shower-title">
+            <ul class="nav">
+                <li><h3 class="shower-title-h">水果缤纷</h3></li>
+                <li><h4><a class="shower-title-a" href="#">更多</a></h4></li>
+            </ul>
+        </nav>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Fruit_link_1}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Fruit_link_2}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Fruit_name_2}}</h6>
+                    <h5 class="shower-card-h2">￥{{Fruit_price_2}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Fruit_link_3}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Fruit_name_3}}</h6>
+                    <h5 class="shower-card-h2">￥{{Fruit_price_3}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Fruit_link_4}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Fruit_name_4}}</h6>
+                    <h5 class="shower-card-h2">￥{{Fruit_price_4}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Fruit_link_5}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Fruit_name_5}}</h6>
+                    <h5 class="shower-card-h2">￥{{Fruit_price_5}}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Fruit_link_6}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src="{{Fruit_link_7}}">
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Fruit_name_7}}</h6>
+                    <h5 class="shower-card-h2">￥{{Fruit_price_7}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Fruit_link_8}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Fruit_name_8}}</h6>
+                    <h5 class="shower-card-h2">￥{{Fruit_price_8}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Fruit_link_9}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Fruit_name_9}}</h6>
+                    <h5 class="shower-card-h2">￥{{Fruit_price_9}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Fruit_link_10}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Fruit_name_10}}</h6>
+                    <h5 class="shower-card-h2">￥{{Fruit_price_10}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--饮料-->
+    <div id="d5" class="shower">
+        <nav class="shower-title">
+            <ul class="nav">
+                <li><h3 class="shower-title-h">饮料缤纷</h3></li>
+                <li><h4><a class="shower-title-a" href="#">更多</a></h4></li>
+            </ul>
+        </nav>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Drink_link_1}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Drink_link_2}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Drink_name_2}}</h6>
+                    <h5 class="shower-card-h2">￥{{Drink_price_2}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Drink_link_3}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Drink_name_3}}</h6>
+                    <h5 class="shower-card-h2">￥{{Drink_price_3}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Drink_link_4}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Drink_name_4}}</h6>
+                    <h5 class="shower-card-h2">￥{{Drink_price_4}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Drink_link_5}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Drink_name_5}}</h6>
+                    <h5 class="shower-card-h2">￥{{Drink_price_6}}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Drink_link_6}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Drink_link_7}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Drink_name_7}}</h6>
+                    <h5 class="shower-card-h2">￥{{Drink_price_7}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Drink_link_8}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Drink_name_8}}</h6>
+                    <h5 class="shower-card-h2">￥{{Drink_price_8}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Drink_link_9}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Drink_name_9}}</h6>
+                    <h5 class="shower-card-h2">￥{{Drink_price_19}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Drink_link_10}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Drink_name_10}}</h6>
+                    <h5 class="shower-card-h2">￥{{Drink_price_10}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--零食-->
+    <div id="d6" class="shower">
+        <nav class="shower-title">
+            <ul class="nav">
+                <li><h3 class="shower-title-h">零食缤纷</h3></li>
+                <li><h4><a class="shower-title-a" href="#">更多</a></h4></li>
+            </ul>
+        </nav>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Snack_link_1}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Snack_link_2}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Snack_name_2}}方糖果</h6>
+                    <h5 class="shower-card-h2">￥{{Snack_price_2}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Snack_link_3}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Snack_name_3}}</h6>
+                    <h5 class="shower-card-h2">￥{{Snack_price_3}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Snack_link_4}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Snack_name_4}}</h6>
+                    <h5 class="shower-card-h2">￥{{Snack_price_4}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Snack_link_5}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Snack_name_5}}</h6>
+                    <h5 class="shower-card-h2">￥{{Snack_price_5}}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Snack_link_6}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Snack_link_7}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Snack_name_7}}</h6>
+                    <h5 class="shower-card-h2">￥{{Snack_price_7}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Snack_link_8}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Snack_name_8}}</h6>
+                    <h5 class="shower-card-h2">￥{{Snack_price_8}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Snack_link_9}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Snack_name_9}}</h6>
+                    <h5 class="shower-card-h2">￥{{Snack_price_9}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Snack_link_10}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Snack_name_10}}</h6>
+                    <h5 class="shower-card-h2">￥{{Snack_price_10}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--日用-->
+    <div id="d7" class="shower">
+        <nav class="shower-title">
+            <ul class="nav">
+                <li><h3 class="shower-title-h">日用缤纷</h3></li>
+                <li><h4><a class="shower-title-a" href="#">更多</a></h4></li>
+            </ul>
+        </nav>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Dayly_link_1}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Dayly_link_2}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Dayly_name_2}}</h6>
+                    <h5 class="shower-card-h2">￥{{Dayly_price_2}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Dayly_link_3}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Dayly_name_3}}</h6>
+                    <h5 class="shower-card-h2">￥{{Dayly_price_3}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Dayly_link_4}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Dayly_name_4}}</h6>
+                    <h5 class="shower-card-h2">￥{{Dayly_price_4}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Dayly_link_5}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Dayly_name_5}}</h6>
+                    <h5 class="shower-card-h2">￥{{Dayly_price_5}}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Dayly_link_6}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Dayly_link_7}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Dayly_name_7}}</h6>
+                    <h5 class="shower-card-h2">￥{{Dayly_price_7}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Dayly_link_8}}>
+                <div class="card-body">
+                   <h6 class="shower-card-h1">{{Dayly_name_8}}</h6>
+                    <h5 class="shower-card-h2">￥{{Dayly_price_8}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Dayly_link_9}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Dayly_name_9}}</h6>
+                    <h5 class="shower-card-h2">￥{{Dayly_price_9}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Dayly_link_10}}>
+                <div class="card-body">
+                   <h6 class="shower-card-h1">{{Dayly_name_10}}</h6>
+                    <h5 class="shower-card-h2">￥{{Dayly_price_10}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--电子-->
+    <div id="d8" class="shower">
+        <nav class="shower-title">
+            <ul class="nav">
+                <li><h3 class="shower-title-h">电子缤纷</h3></li>
+                <li><h4><a class="shower-title-a" href="#">更多</a></h4></li>
+            </ul>
+        </nav>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Electron_link_1}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Electron_link_2}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Electron_name_2}}</h6>
+                    <h5 class="shower-card-h2">￥{{Electron_price_2}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Electron_link_3}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Electron_name_3}}</h6>
+                    <h5 class="shower-card-h2">￥{{Electron_price_3}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Electron_link_4}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Electron_name_4}}</h6>
+                    <h5 class="shower-card-h2">￥{{Electron_price_4}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Electron_link_5}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Electron_name_5}}</h6>
+                    <h5 class="shower-card-h2">￥{{Electron_price_5}}</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row shower-block">
+            <div class="col card shower-card-1">
+                <img class="card-img-top shower-img-1" src={{Electron_link_6}}>
+                <div class="card-img-overlay"></div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Electron_link_7}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Electron_name_7}}</h6>
+                    <h5 class="shower-card-h2">￥{{Electron_price_7}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Electron_link_8}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Electron_name_8}}</h6>
+                    <h5 class="shower-card-h2">￥{{Electron_price_8}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Electron_link_9}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Electron_name_9}}</h6>
+                    <h5 class="shower-card-h2">￥{{Electron_price_9}}</h5>
+                </div>
+            </div>
+            <div class="col card shower-card">
+                <img class="card-img shower-img" src={{Electron_link_10}}>
+                <div class="card-body">
+                    <h6 class="shower-card-h1">{{Electron_name_10}}</h6>
+                    <h5 class="shower-card-h2">￥{{Electron_price_10}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

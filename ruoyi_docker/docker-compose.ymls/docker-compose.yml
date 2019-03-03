@@ -1,0 +1,42 @@
+version: "3.2"
+services: 
+    web: 
+        image: django_mall:1.0
+        depends_on:
+            - mysql
+        networks:
+            - ruoyinet
+        volumes:
+            - type: bind
+              source: ./uwsgi_log
+              target: /app/uwsgi_log
+        command: sh cmd.sh
+    mysql:
+        image: my_mysql:7.0
+        ports:
+            - "3306:3306"
+        networks:
+            - ruoyinet
+        volumes:
+            - type: bind
+              source: ./mysql_log
+              target: /var/lib/mysql
+        command: mysqld --general-log
+    nginx:
+        image: nginx:8.0
+        ports:
+            - "80:80"
+            - "8000:8000"
+        depends_on:
+            - web
+        networks:
+            - ruoyinet
+        volumes:
+            - type: bind
+              source: ./nginx_log
+              target: /var/log/nginx
+            - type: bind
+              source: ./ruoyi_static
+              target: /etc/nginx/ruoyi_static
+networks:
+    ruoyinet:

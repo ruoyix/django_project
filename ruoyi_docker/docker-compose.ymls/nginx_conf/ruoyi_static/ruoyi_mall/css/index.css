@@ -1,0 +1,130 @@
+body {
+    background-color:#F5F5F5;
+}
+#d1 {
+    height:100px;
+}
+#d1h1 {
+    color:orange;
+    position:relative;
+    left:5%;
+    top:28%;
+}
+#d1h1a {
+    color:orange;
+    text-decoration:none;
+}
+#d1p1 {
+    color:orange;
+    position:relative;
+    left:8%;
+    top:5%;
+}
+#d1-1 {
+    position:relative;
+    left:30%;
+    top:-65%;
+}
+#d1-1i1 {
+    width:40%;
+    border-color:orange;
+}
+#d1-1b1 {
+    background-color:orange;
+    color:white;
+}
+
+#d2 {
+    background:orange;
+}
+#d2-1 {
+    width:13%;
+    background:red;
+    position:relative;
+    left:5%;
+}
+
+/*轮播*/
+#d3{
+    background:pink;
+    width:90%;
+    height:600px;
+    position:relative;
+    left:5%;
+}
+#d3-1 {
+    opacity:0.8;
+    width:14.4%;
+    height:100%;
+    background-color:white;
+}
+#carousel {
+    width:85.7%;
+    height:100%;
+    position:relative;
+    left:14.4%;
+    top:-100%;
+}
+.incarousel{
+    width:1200px;
+    height:600px;
+}
+
+/* 分类shower */
+.shower {
+    margin-top:3%;
+    width:90%;
+    height:600px;
+    position:relative;
+    left:5%;
+}
+#scroll-nav-u1 {
+width:5%;
+}
+
+#1 {background-color:yellow;}
+.shower-block {
+    background-color:#F5F5F5;
+    width:100%;
+    height:47%;
+    position:relative;
+    left:1.2%;
+}
+.shower-card {
+    margin:0.5%;
+}
+.shower-card-1 {
+    margin:0.5%;
+}
+.shower-img {
+    height:65%;
+    position:relative;
+    top:5%;
+}
+.shower-img-1 {
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0%;
+}
+.shower-title {
+    background-color:#F5F5F5;
+    width:100%;
+    height:6%;
+}
+.shower-title-h {
+    position:relative;
+    left:10%;
+    top:15%;
+}
+.shower-title-a {
+    position:absolute;
+    left:95%;
+    top:1.5%;
+}
+.shower-card-h1{
+    text-align:center;
+}
+.shower-card-h2{
+    text-align:center;
+}

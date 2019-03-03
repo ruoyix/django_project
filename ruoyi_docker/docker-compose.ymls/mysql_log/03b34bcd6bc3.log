@@ -1,0 +1,48 @@
+mysqld, Version: 5.7.25-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2019-03-03T08:28:19.524387Z	    2 Connect	root@172.19.0.3 on ruoyi_database using TCP/IP
+2019-03-03T08:28:19.544332Z	    2 Query	SET NAMES utf8
+2019-03-03T08:28:19.546708Z	    2 Query	set autocommit=0
+2019-03-03T08:28:19.548027Z	    2 Query	set autocommit=1
+2019-03-03T08:28:19.551790Z	    2 Query	SELECT @@SQL_AUTO_IS_NULL
+2019-03-03T08:28:19.559550Z	    2 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-03T08:28:19.562105Z	    2 Query	SHOW FULL TABLES
+2019-03-03T08:28:19.605077Z	    2 Query	SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`
+2019-03-03T08:28:19.839390Z	    2 Quit	
+2019-03-03T08:28:21.427238Z	    3 Connect	root@172.19.0.3 on ruoyi_database using TCP/IP
+2019-03-03T08:28:21.428557Z	    3 Query	SET NAMES utf8
+2019-03-03T08:28:21.429416Z	    3 Query	set autocommit=0
+2019-03-03T08:28:21.430224Z	    3 Query	set autocommit=1
+2019-03-03T08:28:21.431398Z	    3 Query	SELECT @@SQL_AUTO_IS_NULL
+2019-03-03T08:28:21.436157Z	    3 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-03T08:28:21.437459Z	    3 Query	SELECT @@sql_mode
+2019-03-03T08:28:21.581955Z	    3 Query	SHOW FULL TABLES
+2019-03-03T08:28:21.591303Z	    3 Query	SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`
+2019-03-03T08:28:21.594395Z	    3 Query	SHOW FULL TABLES
+2019-03-03T08:28:21.598586Z	    3 Query	SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`
+2019-03-03T08:28:21.792063Z	    3 Query	SHOW FULL TABLES
+2019-03-03T08:28:21.795786Z	    3 Query	SHOW FULL TABLES
+2019-03-03T08:28:21.799637Z	    3 Query	SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`
+2019-03-03T08:28:21.806306Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry')
+2019-03-03T08:28:21.815322Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-03T08:28:21.821586Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'
+2019-03-03T08:28:21.826445Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission')
+2019-03-03T08:28:21.831267Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group')
+2019-03-03T08:28:21.836473Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'user')
+2019-03-03T08:28:21.842799Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3, 4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-03T08:28:21.848691Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'
+2019-03-03T08:28:21.854570Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype')
+2019-03-03T08:28:21.863709Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-03T08:28:21.869164Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'
+2019-03-03T08:28:21.874396Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session')
+2019-03-03T08:28:21.883344Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-03T08:28:21.887801Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'
+2019-03-03T08:28:21.894585Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'dayly')
+2019-03-03T08:28:21.899211Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'drink')
+2019-03-03T08:28:21.903399Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'electron')
+2019-03-03T08:28:21.907575Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'fruit')
+2019-03-03T08:28:21.912623Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'snack')
+2019-03-03T08:28:21.919089Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (7, 8, 9, 10, 11) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-03T08:28:21.923637Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'ruoyi_mall'
+2019-03-03T08:28:21.926427Z	    3 Quit	

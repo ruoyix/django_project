@@ -1,0 +1,5 @@
+FROM mysql:5.7.25
+
+ENV MYSQL_ROOT_PASSWORD ruoyi123456
+
+ENV MYSQL_DATABASE ruoyi_database

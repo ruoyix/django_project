@@ -1,0 +1,11 @@
+FROM mysql
+
+RUN mkdir /app
+
+WORKDIR /app
+
+RUN mkdir mysql_log && touch mysql_log/mysql.log
+
+ENV MYSQL_ROOT_PASSWORD ruoyi123456
+
+CMD ["mysqld" "--general_log_file" "/app/mysql_log/mysql.log" "--general_log"]

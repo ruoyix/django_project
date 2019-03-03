@@ -1,0 +1,114 @@
+mysqld, Version: 5.7.25-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2019-03-02T14:17:48.356191Z	    2 Connect	root@172.21.0.3 on ruoyi_database using TCP/IP
+2019-03-02T14:17:48.372631Z	    2 Query	SET NAMES utf8
+2019-03-02T14:17:48.373857Z	    2 Query	set autocommit=0
+2019-03-02T14:17:48.375006Z	    2 Query	set autocommit=1
+2019-03-02T14:17:48.378303Z	    2 Query	SELECT @@SQL_AUTO_IS_NULL
+2019-03-02T14:17:48.383480Z	    2 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-02T14:17:48.385075Z	    2 Query	SHOW FULL TABLES
+2019-03-02T14:17:48.435032Z	    2 Query	SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`
+2019-03-02T14:17:48.599956Z	    2 Quit	
+2019-03-02T14:17:50.141572Z	    3 Connect	root@172.21.0.3 on ruoyi_database using TCP/IP
+2019-03-02T14:17:50.142853Z	    3 Query	SET NAMES utf8
+2019-03-02T14:17:50.144505Z	    3 Query	set autocommit=0
+2019-03-02T14:17:50.145827Z	    3 Query	set autocommit=1
+2019-03-02T14:17:50.146942Z	    3 Query	SELECT @@SQL_AUTO_IS_NULL
+2019-03-02T14:17:50.152539Z	    3 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-02T14:17:50.154542Z	    3 Query	SELECT @@sql_mode
+2019-03-02T14:17:50.331383Z	    3 Query	SHOW FULL TABLES
+2019-03-02T14:17:50.343174Z	    3 Query	SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`
+2019-03-02T14:17:50.346334Z	    3 Query	SHOW FULL TABLES
+2019-03-02T14:17:50.350707Z	    3 Query	SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`
+2019-03-02T14:17:50.568424Z	    3 Query	SHOW FULL TABLES
+2019-03-02T14:17:50.573005Z	    3 Query	SHOW FULL TABLES
+2019-03-02T14:17:50.577173Z	    3 Query	SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`
+2019-03-02T14:17:50.583797Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'admin' AND `django_content_type`.`model` = 'logentry')
+2019-03-02T14:17:50.596684Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (1) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-02T14:17:50.607629Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'admin'
+2019-03-02T14:17:50.612757Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'permission')
+2019-03-02T14:17:50.616776Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'group')
+2019-03-02T14:17:50.622316Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'auth' AND `django_content_type`.`model` = 'user')
+2019-03-02T14:17:50.628492Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (2, 3, 4) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-02T14:17:50.632818Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'auth'
+2019-03-02T14:17:50.637594Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'contenttypes' AND `django_content_type`.`model` = 'contenttype')
+2019-03-02T14:17:50.643123Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (5) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-02T14:17:50.646879Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'contenttypes'
+2019-03-02T14:17:50.652955Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'sessions' AND `django_content_type`.`model` = 'session')
+2019-03-02T14:17:50.659062Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (6) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-02T14:17:50.662824Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'sessions'
+2019-03-02T14:17:50.668161Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'dayly')
+2019-03-02T14:17:50.672743Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'drink')
+2019-03-02T14:17:50.676979Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'electron')
+2019-03-02T14:17:50.683548Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'fruit')
+2019-03-02T14:17:50.688206Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE (`django_content_type`.`app_label` = 'ruoyi_mall' AND `django_content_type`.`model` = 'snack')
+2019-03-02T14:17:50.695418Z	    3 Query	SELECT `auth_permission`.`content_type_id`, `auth_permission`.`codename` FROM `auth_permission` INNER JOIN `django_content_type` ON (`auth_permission`.`content_type_id` = `django_content_type`.`id`) WHERE `auth_permission`.`content_type_id` IN (7, 8, 9, 10, 11) ORDER BY `django_content_type`.`app_label` ASC, `django_content_type`.`model` ASC, `auth_permission`.`codename` ASC
+2019-03-02T14:17:50.699784Z	    3 Query	SELECT `django_content_type`.`id`, `django_content_type`.`app_label`, `django_content_type`.`model` FROM `django_content_type` WHERE `django_content_type`.`app_label` = 'ruoyi_mall'
+2019-03-02T14:17:50.702405Z	    3 Quit	
+2019-03-02T14:19:42.329918Z	    4 Connect	root@172.21.0.3 on ruoyi_database using TCP/IP
+2019-03-02T14:19:42.332881Z	    4 Query	SET NAMES utf8
+2019-03-02T14:19:42.334682Z	    4 Query	set autocommit=0
+2019-03-02T14:19:42.336555Z	    4 Query	set autocommit=1
+2019-03-02T14:19:42.339790Z	    4 Query	SELECT @@SQL_AUTO_IS_NULL
+2019-03-02T14:19:42.341632Z	    4 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-02T14:19:42.343040Z	    4 Query	SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'ruoyi'
+2019-03-02T14:19:42.698250Z	    4 Quit	
+2019-03-02T14:19:54.137515Z	    5 Connect	root@172.21.0.3 on ruoyi_database using TCP/IP
+2019-03-02T14:19:54.140705Z	    5 Query	SET NAMES utf8
+2019-03-02T14:19:54.147736Z	    5 Query	set autocommit=0
+2019-03-02T14:19:54.148972Z	    5 Query	set autocommit=1
+2019-03-02T14:19:54.150763Z	    5 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-02T14:19:54.152127Z	    5 Query	SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'ruoyi'
+2019-03-02T14:19:54.431675Z	    5 Quit	
+2019-03-02T14:20:09.458582Z	    6 Connect	root@172.21.0.3 on ruoyi_database using TCP/IP
+2019-03-02T14:20:09.460279Z	    6 Query	SET NAMES utf8
+2019-03-02T14:20:09.462499Z	    6 Query	set autocommit=0
+2019-03-02T14:20:09.464279Z	    6 Query	set autocommit=1
+2019-03-02T14:20:09.465371Z	    6 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-02T14:20:09.466737Z	    6 Query	SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'ruoyi'
+2019-03-02T14:20:09.673058Z	    6 Query	set autocommit=0
+2019-03-02T14:20:09.679325Z	    6 Query	INSERT INTO `auth_user` (`password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES ('pbkdf2_sha256$120000$ANUhXSBYqzMJ$w8u8WZm0ns7BPgW4+XGMFO3OhISuyG3+tZZGVpFwAEQ=', NULL, 1, 'ruoyi', '', '', 'ruoyi@qq.com', 1, 1, '2019-03-02 14:20:09.469509')
+2019-03-02T14:20:09.681787Z	    6 Query	commit
+2019-03-02T14:20:09.685672Z	    6 Query	set autocommit=1
+2019-03-02T14:20:09.727887Z	    6 Quit	
+2019-03-02T14:20:15.104450Z	    7 Connect	root@172.21.0.3 on ruoyi_database using TCP/IP
+2019-03-02T14:20:15.105654Z	    7 Query	SET NAMES utf8
+2019-03-02T14:20:15.106828Z	    7 Query	set autocommit=0
+2019-03-02T14:20:15.109348Z	    7 Query	set autocommit=1
+2019-03-02T14:20:15.110711Z	    7 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-02T14:20:15.112172Z	    7 Query	SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'ruoyi'
+2019-03-02T14:20:15.374045Z	    7 Query	SELECT (1) AS `a` FROM `django_session` WHERE `django_session`.`session_key` = '4410tijycu2sqtkgvtfn8b28xhiarr6p'  LIMIT 1
+2019-03-02T14:20:15.378770Z	    7 Query	set autocommit=0
+2019-03-02T14:20:15.381571Z	    7 Query	INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES ('4410tijycu2sqtkgvtfn8b28xhiarr6p', 'NTJlYzcxMzc4ZWY4Yzg0YzA1MGM2YmQzMGVmYTQ4YmI2NTJmN2FjMTp7fQ==', '2019-03-16 14:20:15.377275')
+2019-03-02T14:20:15.384102Z	    7 Query	commit
+2019-03-02T14:20:15.393581Z	    7 Query	set autocommit=1
+2019-03-02T14:20:15.400874Z	    7 Query	set autocommit=0
+2019-03-02T14:20:15.405426Z	    7 Query	UPDATE `auth_user` SET `last_login` = '2019-03-02 14:20:15.399805' WHERE `auth_user`.`id` = 1
+2019-03-02T14:20:15.407567Z	    7 Query	commit
+2019-03-02T14:20:15.410870Z	    7 Query	set autocommit=1
+2019-03-02T14:20:15.416604Z	    7 Query	set autocommit=0
+2019-03-02T14:20:15.422238Z	    7 Query	UPDATE `django_session` SET `session_data` = 'YzU3YmIzMzA3ZjYwODY0NjE3OTQ3ZDgzNzYzMmIyNGUxYmVlMmJmODp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI5NzNjZGU0M2QwZjJhYzFkYmE4YmZlMTE5MGU0MGM5OTVlNTFjY2ZiIn0=', `expire_date` = '2019-03-16 14:20:15.415017' WHERE `django_session`.`session_key` = '4410tijycu2sqtkgvtfn8b28xhiarr6p'
+2019-03-02T14:20:15.425968Z	    7 Query	commit
+2019-03-02T14:20:15.457033Z	    7 Query	set autocommit=1
+2019-03-02T14:20:15.469762Z	    7 Quit	
+2019-03-02T14:20:15.561915Z	    8 Connect	root@172.21.0.3 on ruoyi_database using TCP/IP
+2019-03-02T14:20:15.563100Z	    8 Query	SET NAMES utf8
+2019-03-02T14:20:15.564028Z	    8 Query	set autocommit=0
+2019-03-02T14:20:15.564979Z	    8 Query	set autocommit=1
+2019-03-02T14:20:15.567735Z	    8 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-02T14:20:15.572301Z	    8 Query	SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-02 14:20:15.548950' AND `django_session`.`session_key` = '4410tijycu2sqtkgvtfn8b28xhiarr6p')
+2019-03-02T14:20:15.580453Z	    8 Query	SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1
+2019-03-02T14:20:15.596401Z	    8 Query	SELECT `auth_group`.`id`, `auth_group`.`name` FROM `auth_group`
+2019-03-02T14:20:15.632329Z	    8 Query	SELECT COUNT(*) AS `__count` FROM `auth_user`
+2019-03-02T14:20:15.635763Z	    8 Query	SELECT COUNT(*) AS `__count` FROM `auth_user`
+2019-03-02T14:20:15.694069Z	    8 Query	SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` ORDER BY `auth_user`.`username` ASC, `auth_user`.`id` DESC
+2019-03-02T14:20:16.077033Z	    8 Quit	
+2019-03-02T14:20:16.315645Z	    9 Connect	root@172.21.0.3 on ruoyi_database using TCP/IP
+2019-03-02T14:20:16.317032Z	    9 Query	SET NAMES utf8
+2019-03-02T14:20:16.318571Z	    9 Query	set autocommit=0
+2019-03-02T14:20:16.321001Z	    9 Query	set autocommit=1
+2019-03-02T14:20:16.326673Z	    9 Query	SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED
+2019-03-02T14:20:16.329072Z	    9 Query	SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2019-03-02 14:20:16.307386' AND `django_session`.`session_key` = '4410tijycu2sqtkgvtfn8b28xhiarr6p')
+2019-03-02T14:20:16.334489Z	    9 Query	SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1
+2019-03-02T14:20:16.350439Z	    9 Quit	

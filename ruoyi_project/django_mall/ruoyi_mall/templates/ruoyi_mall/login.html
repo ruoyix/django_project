@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>login</title>
+    {% load static %}
+</head>
+<body>
+    <link rel="stylesheet" href="{%static 'ruoyi_mall/css/login.css'%}">
+    <link rel="stylesheet" href="/ruoyi_mall/static/ruoyi_mall/css/login.css">
+    <div id="d1" class="container-fluid">
+        <h1 id="d1h1" class="display-5"><a id="d1h1a1" href="{% url 'ruoyi_mall:index' %}">若逸商城</a></h1>
+        <p id="d1p1">ruoyi.com</p>
+        <div id="d1-1" class="pt-1"><p id="p2" class="text-center">欢迎来到若逸商城,这里没有你买不到,只有你想不到</p></div>
+    </div>
+    <div id="d2" class="pt-4 pb-4 pl-4 pr-4">
+        <form action="{%url 'ruoyi_mall:login'%}" method="post">
+            {%csrf_token%}
+            <h4>密码登录</h4>
+            <div class="form-group">
+                <input name="username" type="text" class="form-control" placeholder="帐号：">
+            </div>
+            <div class="form-group">
+                <input name="password" type="text" class="form-control" placeholder="密码：">
+            </div>
+            <input type="submit" value="登录" class="btn btn-primary">
+            <input type="hidden" name="next" value="{% url 'ruoyi_mall:index' %}">
+            <a href="{% url 'ruoyi_mall:register' %}">免费注册</a>
+        </form>
+    </div>
+</body>
+</html>

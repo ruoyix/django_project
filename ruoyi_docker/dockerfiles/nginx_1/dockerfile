@@ -1,0 +1,13 @@
+FROM nginx
+
+RUN mkdir /ruoyi_nginx && mkdir ruoyi_static
+
+WORKDIR /ruoyi_nginx
+
+COPY ./django_mall_nginx.conf /etc/nginx/conf.d/
+
+COPY ./ruoyi_uwsgi_params /etc/nginx/
+
+EXPOSE 8000
+
+CMD ["nginx", "-g", "daemon off;"] 

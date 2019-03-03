@@ -1,0 +1,13 @@
+FROM django_dev:1.0
+
+RUN mkdir /app 
+
+WORKDIR /app
+
+COPY . /app
+
+RUN touch /app/uwsgi_log/uwsgi.log
+
+EXPOSE 8001
+
+
