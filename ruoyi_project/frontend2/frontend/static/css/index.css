@@ -1,0 +1,14 @@
+body{
+}
+#my_carousel {
+    margin-top: 4rem;
+}
+nav {
+    height: 4rem;
+}
+.item_img  {
+    width: 100%;
+}
+.item {
+    margin-top: 1rem;
+}

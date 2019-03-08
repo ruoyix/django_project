@@ -1,0 +1,37 @@
+/* 设备小于600px显示样式 */
+@media (max-width: 600px) {
+    .h {
+        color: red;
+    }
+    .container {
+        background-color: yellow;
+    }
+}
+/* 设备大于600px显示样式 */
+@media (min-width: 600px) {
+    .h {
+        color: blue;
+    }
+    .container {
+        background-color: red;
+    }
+}
+/* 所有显示样式 */
+.h {
+    height:100px;
+}
+.container {
+        height: 100px;
+}
+#my_carousel {
+    width:40rem;
+    height:24rem;
+}
+.img1 {
+    width: 60px;
+    height: 60px;
+}
+.img2 {
+    width: 100px;
+    height: 100px;
+}
