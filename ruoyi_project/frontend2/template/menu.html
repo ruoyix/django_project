@@ -22,8 +22,9 @@
         <div class="collapse navbar-collapse" id="my_collapse">
             <div class="navbar-nav text-right">
                 <a class="nav-item nav-link active" href="http://www.ruoyi.online:8000/index/">主页</a>
-                <a class="nav-item nav-link active" href="#">菜单</a>
-                <a class="nav-item nav-link active" href="#">账户</a>
+                <a class="nav-item nav-link active" href="http://www.ruoyi.online:8000/menu/">菜单</a>
+                <a class="nav-item nav-link active" href="http://www.ruoyi.online:8000/login/">登录</a>
+                <a class="nav-item nav-link active" href="http://www.ruoyi.online:8000/account/">账户</a>
             </div>
         </div>
     </nav>
@@ -49,263 +50,58 @@
     <div class="container my_tab">
     <div id="tab-content" class="row tab-content">
         <div id="1" class="col-lg tab-pane active">
-            <div class="media">
+            {% for i in items %}
+            <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
                 <h6 class="tab_h4">￥5</h6>
                 <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
+                <button type="button" class="btn btn-primary rounded-circle tab_btn"><a>+</a></button>
             </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
+            {% endfor %}
         </div>
         <div id="2" class="tab-pane container">
-            <div class="media">
+            {% for i in items %}
+            <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
                 <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
+                <img class="tab_img" src="{%static 'img/banana.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
             </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
+            {% endfor %}
         </div>
         <div id="3" class="tab-pane container">
-            <div class="media">
+            {% for i in items %}
+            <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
                 <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
+                <img class="tab_img" src="{%static 'img/peach.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
             </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/apple.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
+            {% endfor %}
         </div>
         <div id="4" class="tab-pane container">
-            <div class="media">
+            {% for i in items %}
+            <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
                 <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/strawberry.jpg'%}">
+                <img class="tab_img" src="{%static 'img/strawberry2.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
             </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/strawberry.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/strawberry.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/strawberry.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/strawberry.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/strawberry.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/strawberry.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
+            {% endfor %}
         </div>
         <div id="5" class="tab-pane container">
-            <div class="media">
+            {% for i in items %}
+            <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
                 <h6 class="tab_h4">￥5</h6>
                 <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
             </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
-            <div class="media">
-                <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
-                <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
-                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
-            </div>
+            {% endfor %}
         </div>
     </div>
     </div>
-    <!-- 购物栏 -->
-    <div class="container">
-    <div class="row">
-    <div class="col-lg">
-       <div class="media shop fixed-bottom" style="background-color:red">
-            <img class="shop_img" src="{%static 'img/apple.jpg'%}">
-            <h6 class="shop_h">￥5</h6>
-            <button type="button" class="btn btn-primary shop_btn"><a>结算</a></button>
-        </div>
-    </div>
-    </div>
-    </div>
+
 
     <!-- 垂直 -->
     <ul id="nav3" class="nav nav-tabs flex-column fixed-top nav-light text-center">
@@ -322,9 +118,22 @@
             <a class="nav-link" data-toggle="tab" href="#4">草莓</a>
         </li>
         <li class="nav-item " >
-            <a class="nav-link" data-toggle="tab" href="#5">雪梨</a>
+            <a class="nav-link" data-toggle="tab" href="#5">柠檬</a>
         </li>
     </ul>
+
+    <!-- 购物栏 -->
+    <div class="container">
+    <div class="row">
+    <div class="col-lg">
+       <div class="media shop_media fixed-bottom">
+            <img class="shop_img rounded-circle" src="{%static 'img/shopcar.jpg'%}">
+            <h6 class="shop_h">￥5</h6>
+            <button type="button" class="btn shop_btn "><a>结算</a></button>
+        </div>
+    </div>
+    </div>
+    </div>
 
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
