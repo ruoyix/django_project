@@ -23,3 +23,12 @@ def account(request):
     return render(request, "account.html")
 
 
+def order(request):
+    context = {"info_items": [
+            ["0", "/static/img/lemon.jpg"],
+            ["1", "/static/img/strawberry2.jpg"],
+            ["2", "/static/img/apple.jpg"]
+            ]}
+    return render(request, "order.html", context)
+
+

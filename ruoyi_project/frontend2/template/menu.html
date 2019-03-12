@@ -6,12 +6,19 @@
     <title>Index</title>
     <!-- 新 Bootstrap4 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
     {%load static%}
 </head>
 <body>
     <link rel="stylesheet" href="{%static 'css/menu.css'%}">
+    <script src="/static/js/menu.js"></script>
     <!-- 导航栏 -->
-    <nav id="nav1" class="navbar navbar-tag fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav id="nav1" class="navbar navbar-tag fixed-top navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
             <img src="{%static 'img/kong.jpg'%}" style="width:2rem;height:2rem">
             菜单
@@ -29,31 +36,13 @@
         </div>
     </nav>
     <!-- 菜单栏 -->
-    <!--<ul id="nav2" class="nav nav-tabs nav-light">
-        <li class="nav-item active">
-            <a class="nav-link">苹果</a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link">香蕉</a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link">桃子</a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link">草莓</a>
-        </li>
-        <li class="nav-item ">
-            <a class="nav-link">雪梨</a>
-        </li>
-    </ul> -->
-
     <div class="container my_tab">
     <div id="tab-content" class="row tab-content">
         <div id="1" class="col-lg tab-pane active">
             {% for i in items %}
             <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
+                <h6 class="tab_h4">￥<h6 class="tab_h5">5</h6></h6>
                 <img class="tab_img" src="{%static 'img/apple.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn"><a>+</a></button>
             </div>
@@ -63,7 +52,7 @@
             {% for i in items %}
             <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
+                <h6 class="tab_h4">￥<h6 class="tab_h5">5</h6></h6>
                 <img class="tab_img" src="{%static 'img/banana.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
             </div>
@@ -73,7 +62,7 @@
             {% for i in items %}
             <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
+                <h6 class="tab_h4">￥<h6 class="tab_h5">5</h6></h6>
                 <img class="tab_img" src="{%static 'img/peach.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
             </div>
@@ -83,7 +72,7 @@
             {% for i in items %}
             <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
+                <h6 class="tab_h4">￥<h6 class="tab_h5">5</h6></h6>
                 <img class="tab_img" src="{%static 'img/strawberry2.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
             </div>
@@ -93,7 +82,7 @@
             {% for i in items %}
             <div class="media tab_media">
                 <h6 class="tab_h3">青苹果</h6>
-                <h6 class="tab_h4">￥5</h6>
+                <h6 class="tab_h4">￥<h6 class="tab_h5">5</h6></h6>
                 <img class="tab_img" src="{%static 'img/lemon.jpg'%}">
                 <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
             </div>
@@ -127,19 +116,34 @@
     <div class="row">
     <div class="col-lg">
        <div class="media shop_media fixed-bottom">
-            <img class="shop_img rounded-circle" src="{%static 'img/shopcar.jpg'%}">
-            <h6 class="shop_h">￥5</h6>
-            <button type="button" class="btn shop_btn "><a>结算</a></button>
-        </div>
+           <a href="#shopcar" data-toggle="collapse" role="button">
+               <img class="shop_img rounded-circle" src="{%static 'img/shopcar2.jpg'%}">
+               <span class="badge badge-danger shop_span">0</span>
+           </a>
+           <h6 class="shop_h1">￥<h6 class="shop_h2">0</h6></h6>
+           <button type="button" class="btn shop_btn ">
+               <a href="http://www.ruoyi.online:8000/order/">结算</a>
+           </button>
+           <div class="container collapse" id="shopcar">
+               <div class="row shopcar_title">
+                    <h6 class="ml-4">已选商品</h6>
+               </div>
+               <nav class="navbar shopcar_nav">
+                   <a class="navbar-item">青苹果</a>
+                   <a class="navbar-item shopcar_a2">￥5</a>
+                   <button type="button" class="btn btn-primary shopcar_btn"><h6>-</h6></button>
+               </nav>
+               <hr class="m-0">
+               <nav class="navbar">
+                   <a class="navbar-item">青苹果</a>
+                   <a class="navbar-item shopcar_a2">￥5</a>
+                   <button type="button" class="btn btn-primary shopcar_btn"><h6>-</h6></button>
+               </nav>
+           </div>
+       </div>
     </div>
     </div>
     </div>
 
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
-    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
-    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </body>
 </html>

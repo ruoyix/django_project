@@ -1,0 +1,84 @@
+body{
+    background-color: GhostWhite;
+    padding-bottom: 3rem;
+}
+#nav1 {
+    height: 3.7rem;
+    background-color: #00F5FF;
+}
+.info_nav1 {
+    margin-top: 5rem;
+}
+.info_nav {
+    margin-top: 1rem;
+}
+.info_title {
+}
+.info_key {
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+.info_value {
+    position: absolute;
+    left: 14rem;
+}
+.info_key2 {
+    font-size: 1rem;
+    margin-rem: 1rem;
+    margin-left: 2rem;
+}
+.info_value2,  .info_value3 {
+    position: relative;
+    left: 11.5rem;
+}
+.info_key3 {
+    font-size: 1rem;
+    margin-rem: 1rem;
+    margin-left: 2rem;
+}
+.info_value4, .info_value5 {
+    position: relative;
+    left: 12.1rem;
+}
+.info_img {
+    margin-left: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+.info_h1 {
+    margin-top:1rem;
+    margin-left: 8rem;
+}
+.info_h2, .info_h3 {
+    position: relative;
+    left: 2.5rem;
+    top: 1rem;
+}
+.shop {
+    height:3rem;
+}
+.shop_img {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    left: 1.5rem;
+    top: 0rem;
+}
+.shop_media {
+    background-color: DimGrey;
+}
+.shop_h1, .shop_h2 {
+    color: white;
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+}
+.shop_btn {
+    background-color: #9AFF9A;
+    color: white;
+    width: 4rem;
+    height: 3rem;
+    position: relative;
+    left: 12rem;
+    top: 0rem;
+}

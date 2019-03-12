@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Index</title>
+    <title>order</title>
     <!-- 新 Bootstrap4 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
@@ -15,13 +15,13 @@
     {%load static%}
 </head>
 <body>
-    <link rel="stylesheet" href="{%static 'css/index.css'%}">
-    <script src="/static/js/index.js"></script>
+    <link rel="stylesheet" href="{%static 'css/order.css'%}">
+    <script src="/static/js/order.js"></script>
     <!-- 导航栏 -->
     <nav id="nav1" class="navbar navbar-tag fixed-top navbar-expand-sm navbar-light">
         <a class="navbar-brand" href="#">
             <img src="{%static 'img/kong.jpg'%}" style="width:2rem;height:2rem">
-            若逸商城
+            订单
         </a>
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#my_collapse">
             <span class="navbar-toggle-icon"></span>
@@ -35,43 +35,49 @@
             </div>
         </div>
     </nav>
-    <!-- 轮播 -->
-    <div id="my_carousel" class="carousel slide" data-ride="carousel" data-interval="3000">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="{%static 'img/lemon.jpg'%}">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="{%static 'img/strawberry.jpg'%}">
-            </div>
-            <div class="carousel-item" >
-                <img class="d-block w-100" src="{%static 'img/apple.jpg'%}">
-            </div>
-        </div>
-        <ul class="carousel-indicators">
-            <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#my_carousel" data-slide-to="1"></li>
-            <li data-target="#my_carousel" data-slide-to="2"></li>
-        </ul>
-        <a class="carousel-control-prev" href="#my_carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#my_carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-    </div>
+    <!-- 订单信息 -->
     <div class="container">
-        <div class="row">
-            <div class="col-lg item">
-                <img class="item_img fluid-img" src="{%static 'img/fruit3.jpg'%}">
+        <nav class="nav-bar info_nav1">
+            <h6 class="navbar-item info_title">订单配送至</h6>
+            <a class="navbar-item info_key">地址</a>
+            <a class="navbar-item info_value" href="#">14栋前门</a>
+            <br>
+            <a class="navbar-item info_key">手机</a>
+            <a class="navbar-item info_value" href="#">157****33511</a>
+        </nav>
+    </div>
+    <hr class="m-2">
+    <div class="container mt-4">
+        <h6 class="navbar-item info_title">已点菜单列表</h6>
+        {% for i in info_items %}
+        <nav class="nav-bar info_nav">
+            <div class="media info_media">
+                <img class="info_img" src={{i.1}}>
+                <h6 class="info_h1">×2</h6>
+                <h6 class="info_h2">￥<h6 id={{i.0}} class="info_h3">10</h6></h6>
             </div>
-            <div class="col-lg item">
-                <img class="item_img fluid-img" src="{%static 'img/fruit2.jpg'%}">
-            </div>
-            <div class="col-lg item">
-                <img class="item_img fluid-img" src="{%static 'img/fruit1.jpg'%}">
-            </div>
+        </nav>
+        <hr class="m-2">
+        {% endfor %}
+        <a class="navbar-item info_key2">配送费</a>
+        <a class="navbar-item info_value2">￥<a class="info_value3">1</a></a>
+        <hr class="m-2">
+        <a class="navbar-item info_key3">优惠</a>
+        <a class="navbar-item info_value4 text-danger">-￥<a class="info_value5 text-danger">2</a></a>
+    </div>
+    <hr class="m-2">
+    <!-- 购物栏 -->
+    <div class="container">
+    <div class="row">
+    <div class="col-lg">
+       <div class="media shop_media fixed-bottom">
+            <img class="shop_img rounded-circle" src="{%static 'img/shopcar2.jpg'%}">
+            <h6 class="shop_h1">￥<h6 class="shop_h2">0</h6></h6>
+            <button type="button" class="btn shop_btn "><a href="http://www.ruoyi.online:8000/order/">支付</a></button>
         </div>
     </div>
+    </div>
+    </div>
+
 </body>
 </html>

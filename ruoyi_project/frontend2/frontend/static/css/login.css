@@ -1,6 +1,10 @@
 body {
     background-color: GhostWhite;
 }
+#nav1 {
+    height: 3.7rem;
+    background-color: #00F5FF;
+}
 .login_nav {
     background-color: GhostWhite;
     margin-top: 3.7rem;
