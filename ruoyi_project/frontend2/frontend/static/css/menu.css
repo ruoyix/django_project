@@ -1,7 +1,8 @@
 body{
 }
-#nav11 {
-    height: 3rem;
+#nav1 {
+    height: 3.7rem;
+    background-color: #00F5FF;
 }
 #nav21 {
     height: 3rem;
@@ -26,7 +27,7 @@ body{
 }
 .tab_img {
     position: relative;
-    left: 0rem;
+    left: 1rem;
     width: 5rem;
     height: 5rem;
 }
@@ -44,7 +45,7 @@ body{
 }
 .tab_h4 {
     position: relative;
-    left: 7rem;
+    left: 8rem;
     top: 3rem;
 }
 .shop {
@@ -57,21 +58,46 @@ body{
     left: 1rem;
     top: 0rem;
 }
+.shop_span {
+    position: absolute;
+    left: 3.5rem;
+    top: 0rem;
+}
 .shop_media {
     background-color: DimGrey;
 }
-.shop_h {
+.shop_h1 {
     color: white;
     position: relative;
-    left: 2rem;
+    left: 2.5rem;
     top: 1rem;
 }
 .shop_btn {
-    background-color: #00FF00;
+    background-color: #9AFF9A;
     color: white;
     width: 4rem;
     height: 3rem;
-    position: relative;
-    left: 13.3rem;
+    position: absolute;
+    left: 18rem;
     top: 0rem;
+}
+#shopcar {
+    background-color: Snow ;
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    margin-bottom: 3rem;
+}
+.shopcar_title {
+    background-color:  #BBFFFF;
+    padding-top: 0.5rem;
+}
+.shopcar_a2 {
+    position: absolute;
+    left: 6.5rem;
+}
+.shopcar_btn {
+    height: 1.5rem;
+    position: absolute;
+    left: 18rem;
 }

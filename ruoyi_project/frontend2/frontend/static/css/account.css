@@ -1,6 +1,10 @@
 body{
     background-color: GhostWhite;
 }
+#nav1 {
+    height: 3.7rem;
+    background-color: #00F5FF;
+}
 .info_nav1 {
     margin-top: 7rem;
 }

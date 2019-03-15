@@ -1,8 +1,12 @@
 body{
     background-color: GhostWhite;
 }
+#nav1 {
+    height: 3.7rem;
+    background-color: #00F5FF;
+}
 #my_carousel {
-    margin-top: 4rem;
+    margin-top: 3.7rem;
 }
 nav {
     height: 4rem;

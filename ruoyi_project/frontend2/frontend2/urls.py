@@ -24,4 +24,5 @@ urlpatterns = [
     path('login/', v.login),
     path('register/', v.register),
     path('account/', v.account),
+    path('order/', v.order),
 ]
