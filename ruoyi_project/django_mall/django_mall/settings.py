@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'dbdlti%ffl+)bktg%tpf%8azx98kq2yjy0bg)ahdrz5yt+8wxv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -125,5 +125,6 @@ USE_TZ = True
 # 提示是不全的,输入完才知道有效否
 
 # STATIC_URL = '/static/'
-STATIC_URL = os.path.join(BASE_DIR, "/static/")
-STATIC_ROOT = "static"
+# STATIC_URL = os.path.join(BASE_DIR, "/static/")
+STATIC_URL = "http://192.168.1.103:8080/static/"
+STATIC_ROOT = "/static"

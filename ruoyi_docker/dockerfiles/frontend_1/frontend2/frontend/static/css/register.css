@@ -1,0 +1,28 @@
+body {
+    background-color: GhostWhite;
+}
+#nav1 {
+    height: 3.7rem;
+    background-color: #00F5FF;
+}
+.login_nav {
+    background-color: GhostWhite;
+    margin-top: 3.7rem;
+    padding-bottom: 0rem;
+}
+.login_a1 {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.login_a2 {
+    margin-top: 0.5rem;
+}
+.form_outer {
+    background-color: GhostWhite;
+}
+.form_inter {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

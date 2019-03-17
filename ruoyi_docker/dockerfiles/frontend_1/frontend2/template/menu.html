@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Index</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    {%load static%}
+</head>
+<body>
+    <link rel="stylesheet" href="{%static 'css/menu.css'%}">
+    <script src="/static/js/menu.js"></script>
+    <!-- 导航栏 -->
+    <nav id="nav1" class="navbar navbar-tag fixed-top navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="{%static 'img/kong.jpg'%}" style="width:2.5rem;height:2.5rem">
+            菜单
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my_collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_collapse">
+            <div class="navbar-nav text-right">
+                <a class="nav-item nav-link active" href="http://www.ruoyi.online:8000/index/">主页</a>
+                <a class="nav-item nav-link active" href="http://www.ruoyi.online:8000/menu/">菜单</a>
+                <a class="nav-item nav-link active" href="http://www.ruoyi.online:8000/login/">登录</a>
+                <a class="nav-item nav-link active" href="http://www.ruoyi.online:8000/account/">账户</a>
+            </div>
+        </div>
+    </nav>
+    <!-- 菜单栏 -->
+    <div class="container my_tab">
+    <div id="tab-content" class="row tab-content">
+        <div id="1" class="col-lg tab-pane active">
+            {% for i in items1 %}
+            <div class="media tab_media">
+                <h6 class="tab_h3">苹果</h6>
+                <h6 class="tab_h4">￥4</h6>
+                <img class="tab_img" src='{{i.1}}'>
+                <button type="button" class="btn btn-primary rounded-circle tab_btn"><h6>+</h6></button>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="2" class="tab-pane container">
+            {% for i in items2 %}
+            <div class="media tab_media">
+                <h6 class="tab_h3">香蕉</h6>
+                <h6 class="tab_h4">￥5</h6>
+                <img class="tab_img" src={{i.1}}>
+                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="3" class="tab-pane container">
+            {% for i in items3 %}
+            <div class="media tab_media">
+                <h6 class="tab_h3">西瓜</h6>
+                <h6 class="tab_h4">￥2</h6>
+                <img class="tab_img" src={{i.1}}>
+                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="4" class="tab-pane container">
+            {% for i in items4 %}
+            <div class="media tab_media">
+                <h6 class="tab_h3">草莓</h6>
+                <h6 class="tab_h4">￥8</h6>
+                <img class="tab_img" src={{i.1}}>
+                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="5" class="tab-pane container">
+            {% for i in items5 %}
+            <div class="media tab_media">
+                <h6 class="tab_h3">柠檬</h6>
+                <h6 class="tab_h4">￥3</h6>
+                <img class="tab_img" src={{i.1}}>
+                <button type="button" class="btn btn-primary rounded-circle tab_btn">+</button>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+
+
+    <!-- 垂直 -->
+    <ul id="nav3" class="nav nav-tabs flex-column fixed-top nav-light text-center">
+        <li class="nav-item active">
+            <a class="nav-link active" data-toggle="tab" href="#1">苹果</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" data-toggle="tab" href="#2">香蕉</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" data-toggle="tab" href="#3">西瓜</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" data-toggle="tab" href="#4">草莓</a>
+        </li>
+        <li class="nav-item " >
+            <a class="nav-link" data-toggle="tab" href="#5">柠檬</a>
+        </li>
+    </ul>
+
+    <!-- 购物栏 -->
+    <div class="container">
+    <div class="row">
+    <div class="col-lg">
+       <div class="media shop_media fixed-bottom">
+           <a href="#shopcar" data-toggle="collapse" role="button">
+               <img class="shop_img rounded-circle" src="{%static 'img/shopcar2.jpg'%}">
+               <span class="badge badge-danger shop_span">0</span>
+           </a>
+           <h6 class="shop_h1">￥0</h6></h6>
+           <button type="button" class="btn shop_btn ">
+               <a href="http://www.ruoyi.online:8000/order/">结算</a>
+           </button>
+           <div class="container collapse" id="shopcar">
+               <div class="row shopcar_title">
+                    <h6 class="ml-4">已选商品</h6>
+               </div>
+                <!--
+               <nav class="navbar shopcar_nav">
+                   <h6 class="navbar-item">青苹果</h6>
+                   <h6 class="navbar-item shopcar_a2">￥5</h6>
+                   <button type="button" class="btn btn-primary shopcar_btn"><h6>-</h6></button>
+               </nav>
+               <hr class="m-0">
+                -->
+           </div>
+       </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+</html>

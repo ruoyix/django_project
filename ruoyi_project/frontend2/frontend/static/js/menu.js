@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $(".tab_btn").click(function(){
-<<<<<<< HEAD
         var price1 = Number($(this).siblings(".tab_h4").text().split("￥")[1]);
         var price2 = Number($(".shop_h1").text().split("￥")[1]);
         price3 = price1+price2;
@@ -31,14 +30,4 @@ $(document).ready(function(){
         });
 
     })
-=======
-        var price1 = Number($(this).siblings(".tab_h5").text());
-        var price2 = Number($(".shop_h2").text());
-        price3 = price1+price2;
-        $(".shop_h2").text(price3);
-        var number = Number($(".shop_span").text());
-        number = number + 1;
-        $(".shop_span").text(number);
-    });
->>>>>>> 58988b94023be8cde7d9d4f4d8854f749830e7d3
 });

@@ -86,15 +86,9 @@ def account(request):
 
 def order(request):
     context = {"info_items": [
-<<<<<<< HEAD
             ["0", "/static/img/lemon0.jpg"],
             ["1", "/static/img/strawberry0.jpg"],
             ["2", "/static/img/apple0.jpg"]
-=======
-            ["0", "/static/img/lemon.jpg"],
-            ["1", "/static/img/strawberry2.jpg"],
-            ["2", "/static/img/apple.jpg"]
->>>>>>> 58988b94023be8cde7d9d4f4d8854f749830e7d3
             ]}
     return render(request, "order.html", context)
 

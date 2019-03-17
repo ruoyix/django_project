@@ -682,4 +682,199 @@ Not Found: /mall/index/p1.ssl.qhimgs1.com/bdr/200_200_/t01a44596706ed343dd.jpg
 [pid: 3831|app: 0|req: 8/8] 192.168.1.103 () {42 vars in 836 bytes} [Sun Mar  3 07:31:39 2019] GET /mall/index/p1.ssl.qhimgs1.com/bdr/200_200_/t01a44596706ed343dd.jpg => generated 3760 bytes in 38 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
 Not Found: /https:/p1.ssl.qhimgs1.com/bdr/200_200_/t01a44596706ed343dd.jpg
 [pid: 3831|app: 0|req: 9/9] 192.168.1.103 () {42 vars in 829 bytes} [Sun Mar  3 07:31:39 2019] GET /https://p1.ssl.qhimgs1.com/bdr/200_200_/t01a44596706ed343dd.jpg => generated 2239 bytes in 14 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
-                                           
+                                           *** Starting uWSGI 2.0.18 (64bit) on [Sat Mar 16 15:07:26 2019] ***
+compiled with version: 7.3.0 on 18 February 2019 08:02:24
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: mint
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/ruoyi/ruoyi_project/django_mall
+detected binary path: /home/ruoyi/ruoyi_env/django_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11162
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+building mime-types dictionary from file /etc/mime.types...554 entry found
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x563cb7e83c60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x563cb7e83c60 pid: 2514 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 2514, cores: 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar 16 20:12:16 2019] ***
+compiled with version: 7.3.0 on 18 February 2019 08:02:24
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: mint
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/ruoyi/ruoyi_project/django_mall
+detected binary path: /home/ruoyi/ruoyi_env/django_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11162
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5569fa467f60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5569fa467f60 pid: 2971 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 2971, cores: 1)
+Not Found: /
+[pid: 2971|app: 0|req: 1/1] 192.168.1.103 () {42 vars in 746 bytes} [Sat Mar 16 12:13:00 2019] GET / => generated 2035 bytes in 61 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 2971|app: 0|req: 2/2] 192.168.1.103 () {40 vars in 733 bytes} [Sat Mar 16 12:13:00 2019] GET /favicon.ico => generated 2086 bytes in 16 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 2971|app: 0|req: 3/3] 192.168.1.103 () {42 vars in 768 bytes} [Sat Mar 16 12:13:11 2019] GET /mall/login/ => generated 1860 bytes in 112 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+Not Found: /mall/login/ruoyi_mall/css/login.css
+[pid: 2971|app: 0|req: 4/4] 192.168.1.103 () {42 vars in 789 bytes} [Sat Mar 16 12:13:11 2019] GET /mall/login/ruoyi_mall/css/login.css => generated 3667 bytes in 23 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /ruoyi_mall/static/ruoyi_mall/css/login.css
+[pid: 2971|app: 0|req: 5/5] 192.168.1.103 () {42 vars in 803 bytes} [Sat Mar 16 12:13:11 2019] GET /ruoyi_mall/static/ruoyi_mall/css/login.css => generated 2179 bytes in 17 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /mall/login/ruoyi_mall/css/login.css
+[pid: 2971|app: 0|req: 6/6] 192.168.1.103 () {42 vars in 789 bytes} [Sat Mar 16 12:13:12 2019] GET /mall/login/ruoyi_mall/css/login.css => generated 3667 bytes in 29 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /ruoyi_mall/static/ruoyi_mall/css/login.css
+[pid: 2971|app: 0|req: 7/7] 192.168.1.103 () {42 vars in 803 bytes} [Sat Mar 16 12:13:12 2019] GET /ruoyi_mall/static/ruoyi_mall/css/login.css => generated 2179 bytes in 11 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar 16 20:17:25 2019] ***
+compiled with version: 7.3.0 on 18 February 2019 08:02:24
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: mint
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/ruoyi/ruoyi_project/django_mall
+detected binary path: /home/ruoyi/ruoyi_env/django_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11162
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55bb1f796f60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55bb1f796f60 pid: 3223 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 3223, cores: 1)
+[pid: 3223|app: 0|req: 1/1] 192.168.1.103 () {44 vars in 799 bytes} [Sat Mar 16 12:17:43 2019] GET /mall/login/ => generated 1868 bytes in 357 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+Not Found: /ruoyi_mall/static/ruoyi_mall/css/login.css
+[pid: 3223|app: 0|req: 2/2] 192.168.1.103 () {44 vars in 834 bytes} [Sat Mar 16 12:17:44 2019] GET /ruoyi_mall/static/ruoyi_mall/css/login.css => generated 2179 bytes in 28 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /ruoyi_mall/static/ruoyi_mall/css/login.css
+[pid: 3223|app: 0|req: 3/3] 192.168.1.103 () {44 vars in 834 bytes} [Sat Mar 16 12:17:44 2019] GET /ruoyi_mall/static/ruoyi_mall/css/login.css => generated 2179 bytes in 19 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar 16 20:21:13 2019] ***
+compiled with version: 7.3.0 on 18 February 2019 08:02:24
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: mint
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/ruoyi/ruoyi_project/django_mall
+detected binary path: /home/ruoyi/ruoyi_env/django_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11162
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x556c36438f60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556c36438f60 pid: 3345 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 3345, cores: 1)
+[pid: 3345|app: 0|req: 1/1] 192.168.1.103 () {44 vars in 799 bytes} [Sat Mar 16 12:21:36 2019] GET /mall/login/ => generated 1860 bytes in 133 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+Not Found: /mall/login/ruoyi_mall/css/login.css
+[pid: 3345|app: 0|req: 2/2] 192.168.1.103 () {44 vars in 820 bytes} [Sat Mar 16 12:21:36 2019] GET /mall/login/ruoyi_mall/css/login.css => generated 3667 bytes in 27 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /ruoyi_mall/static/ruoyi_mall/css/login.css
+[pid: 3345|app: 0|req: 3/3] 192.168.1.103 () {44 vars in 834 bytes} [Sat Mar 16 12:21:36 2019] GET /ruoyi_mall/static/ruoyi_mall/css/login.css => generated 2179 bytes in 22 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /mall/login/ruoyi_mall/css/login.css
+[pid: 3345|app: 0|req: 4/4] 192.168.1.103 () {44 vars in 820 bytes} [Sat Mar 16 12:21:37 2019] GET /mall/login/ruoyi_mall/css/login.css => generated 3667 bytes in 18 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /ruoyi_mall/static/ruoyi_mall/css/login.css
+[pid: 3345|app: 0|req: 5/5] 192.168.1.103 () {44 vars in 834 bytes} [Sat Mar 16 12:21:37 2019] GET /ruoyi_mall/static/ruoyi_mall/css/login.css => generated 2179 bytes in 13 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 3345|app: 0|req: 6/6] 192.168.1.103 () {42 vars in 768 bytes} [Sat Mar 16 12:24:34 2019] GET /mall/login/ => generated 1860 bytes in 24 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar 16 20:25:40 2019] ***
+compiled with version: 7.3.0 on 18 February 2019 08:02:24
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: mint
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/ruoyi/ruoyi_project/django_mall
+detected binary path: /home/ruoyi/ruoyi_env/django_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11162
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x562600a7af60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 2 seconds on interpreter 0x562600a7af60 pid: 3448 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 3448, cores: 1)
+[pid: 3448|app: 0|req: 1/1] 192.168.1.103 () {42 vars in 768 bytes} [Sat Mar 16 12:25:53 2019] GET /mall/login/ => generated 1860 bytes in 186 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Mar 16 21:03:38 2019] ***
+compiled with version: 7.3.0 on 18 February 2019 08:02:24
+os: Linux-4.15.0-20-generic #21-Ubuntu SMP Tue Apr 24 06:16:15 UTC 2018
+nodename: mint
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 4
+current working directory: /home/ruoyi/ruoyi_project/django_mall
+detected binary path: /home/ruoyi/ruoyi_env/django_env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 11162
+your memory page size is 4096 bytes
+detected max file descriptor number: 4096
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 3
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5636ea14ff60
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 72904 bytes (71 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5636ea14ff60 pid: 3760 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (and the only) (pid: 3760, cores: 1)
+[pid: 3760|app: 0|req: 1/1] 192.168.1.103 () {44 vars in 799 bytes} [Sat Mar 16 13:03:54 2019] GET /mall/login/ => generated 1893 bytes in 190 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 3760|app: 0|req: 2/2] 192.168.1.103 () {44 vars in 834 bytes} [Sat Mar 16 13:03:54 2019] GET /ruoyi_mall/static/ruoyi_mall/css/login.css => generated 77 bytes in 47 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 3760|app: 0|req: 3/3] 192.168.1.103 () {44 vars in 834 bytes} [Sat Mar 16 13:03:55 2019] GET /ruoyi_mall/static/ruoyi_mall/css/login.css => generated 77 bytes in 10 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+Gracefully killing worker 1 (pid: 3760)...

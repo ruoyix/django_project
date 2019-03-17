@@ -1,0 +1,29 @@
+version: "3.2"
+services: 
+    web: 
+        image: frontend:4.0
+        networks:
+            - ruoyinet
+        volumes:
+            - type: bind
+              source: ./uwsgi_log
+              target: /app/uwsgi_log
+        command: sh cmd.sh
+    nginx:
+        image: frontnginx:1.0
+        ports:
+            - "192.168.1.103:80:80"
+            - "192.168.1.103:8000:8000"
+        depends_on:
+            - web
+        networks:
+            - ruoyinet
+        volumes:
+            - type: bind
+              source: ./nginx_log
+              target: /var/log/nginx
+            - type: bind
+              source: ./ruoyi_static
+              target: /etc/nginx/ruoyi_static
+networks:
+    ruoyinet:
